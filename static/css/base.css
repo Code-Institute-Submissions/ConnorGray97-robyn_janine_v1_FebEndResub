@@ -1,0 +1,270 @@
+html {
+    background-color: rgb(230, 134, 190);
+    height: 200%;
+}
+
+/* Home Page  ------------------*/
+
+#landing-img {
+  position: fixed;
+  left: 308px;
+  top: 100px;
+  width: 29vw;
+} 
+
+p {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-size: 15vw;
+  bottom: 0;
+  text-transform: uppercase;
+  right: 11px;
+  font-family: 'Alata';
+  color: #BF4A67;
+}
+
+.first-name {
+  bottom: 25%;
+  right: 304px;
+}
+
+.second-name {
+  left: 120px;
+  bottom: 0%;
+}
+
+.socials {
+  position: fixed;
+  bottom: 0;
+  line-height: 111px;
+  left: 46px;
+  color: #BF4A67;
+  top: 120px;
+}
+
+.socials a {
+  color: #BF4A67;
+}
+
+.socials a:hover {
+  color: #FFF;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.user-list {
+  position: fixed;
+  right: 53px;
+  top: 35px;
+  color: #BF4A67;
+}
+
+.user-list a {
+  color: #BF4A67;
+  text-decoration: none;
+}
+
+.user-list a:hover {
+  color: #FFF;
+  cursor: pointer;
+}
+
+.arrow {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  color: #FFF;
+}
+
+h2 {
+
+  position: fixed;
+  color: #FFF;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  left: 3000px;
+  bottom: 170px;
+  width: 800px;
+  line-height: 25px;
+  font-family: 'Alata';
+
+
+}
+
+
+/* End Home Page  ------------------*/
+
+
+
+/* Nav Overlay style  ------------------*/
+/*credit.   https://codeconvey.com/build-fullscreen-overlay-hamburger-menu/#google_vignette*/
+
+.fullnav {
+    font-family: 'Alata';
+    position: fixed;
+    background: #E6567A;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .35s, visibility .35s, height .35s;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+  }
+  .fullnav.open {
+    opacity: .9;
+    visibility: visible;
+    height: 100%;
+    z-index:99;
+  }
+  .fullnav.open li {
+    -webkit-animation: fadeInRight .5s ease forwards;
+            animation: fadeInRight .5s ease forwards;
+    -webkit-animation-delay: .35s;
+            animation-delay: .35s;
+  }
+  .fullnav.open li:nth-of-type(2) {
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
+  }
+  .fullnav.open li:nth-of-type(3) {
+    -webkit-animation-delay: .45s;
+            animation-delay: .45s;
+  }
+  .fullnav.open li:nth-of-type(4) {
+    -webkit-animation-delay: .50s;
+            animation-delay: .50s;
+  }
+  .fullnav nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 35px;
+    font-family: 'Alata',sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .fullnav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+  }
+  .fullnav ul li {
+    display: block;
+    height: 25%;
+    height: calc(100% / 5);
+    min-height: 50px;
+    position: relative;
+    opacity: 0;
+  }
+  .fullnav ul li a {
+    display: block;
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  .fullnav ul li a:hover:after, .fullnav ul li a:focus:after, .fullnav ul li a:active:after {
+    width: 100%;
+  }
+  .fullnav ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 3px;
+    background: #FFF;
+    -webkit-transition: .35s;
+    transition: .35s;
+  }
+  
+  @-webkit-keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  
+  
+  /* Overlay style button*/
+  
+  .fullnavBtn {
+    position: fixed;
+    top: 50px;
+    left: 53px;
+    height: 27px;
+    width: 60px;
+    cursor: pointer;
+    z-index: 100;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+  }
+  .fullnavBtn:hover {
+    opacity: .7;
+  }
+  .fullnavBtn.active .top {
+    -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+            transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #FFF;
+  }
+  .fullnavBtn.active .middle {
+    opacity: 0;
+    background: #FFF;
+  }
+  .fullnavBtn.active .bottom {
+    -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+            transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #FFF;
+  }
+  .fullnavBtn span {
+    background: #BF4A67;
+    border: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer;
+  }
+  .fullnavBtn span:nth-of-type(2) {
+    top: 11px;
+  }
+  .fullnavBtn span:nth-of-type(3) {
+    top: 22px;
+  }
+
+  /*credit.   https://codeconvey.com/build-fullscreen-overlay-hamburger-menu/#google_vignette*/
+
+  /* Media Queries  ------------------*/
+
+
+

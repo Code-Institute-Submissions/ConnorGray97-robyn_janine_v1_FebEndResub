@@ -1,55 +1,51 @@
-<div class="row mt-3">
-    <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-        <a href="{% url 'home' %}" class="nav-link">
-            <h2 class="nav-logo">Robyn Janine</h2>
-        </a>
-    </div>
-    <div class="col-12 col-lg-4 my-auto pt-1 py-lg-0">
-        <form method="GET" action="">
-            <div class="input-group">
-                <input class="form-control" type="text" name="q">
-                <div class="input-group-append">
-                    <button class="form-control" type="submit">
-                        <i class="las la-2x la-search"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-            <li class="list-inline-item dropdown">
-                <a class="dropdown-toggle text-decoration-none" aria-haspopup="true" id="dropdownMenuButton1" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span><i class="las la-2x la-user text-dark"></i></span>
-                </a>
-                <div class="dropdown-menu border-0" aria-labelledby="dropdownMenuButton1">
-                    {% if request.user.is_authenticated %}
-                        {% if request.user.is_superuser %}
-                            <a href="" class="dropdown-item nav-link text-dark">Add Product</a>
-                        {% endif %}
-                        <a href="" class="dropdown-item nav-link">My Account</a>
-                        <a href="" class="dropdown-item nav-link">Logout</a>
-                    {% else %}
-                        <a href="" class="dropdown-item nav-link">Register</a>
-                        <a href="" class="dropdown-item nav-link">Login</a>
-                    {% endif %}
-                </div>
-            </li>
-            {% if request.user.is_authenticated %}
-                <li class="list-inline-item">
-                    <a href="" class="nav-link text-dark">
-                        <i class="lar la-2x la-heart"></i>
-                    </a>
-                </li>
-            {% endif %}
-            <li class="list-inline-item">
-                <a href="" class="nav-link">
-                    <i class="las la-2x la-shopping-bag"></i>
-                    {% if product_count > 0 %}
-                        ({{ product_count }})
-                    {% endif %}
-                </a>
-            </li>
-        </ul>
-    </div>
+{% load static %}
+
+<div class="fullnavBtn toggle">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
 </div>
+
+<div class="fullnav" id="fullnav">
+    <nav class="fullnavMenu">
+        <ul>
+            <li><a href="#">Search <i class="las la-search"></i></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="col-12 user-container">
+    <ul class="list-inline list-unstyled text-center text-lg-right my-0 user-list">
+        <li class="list-inline-item dropdown">
+            <a class="dropdown-toggle text-decoration-none" aria-haspopup="true" id="dropdownMenuButton1" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <span><i class="las la-3x la-user"></i></span>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="dropdownMenuButton1">
+                {% if request.user.is_authenticated %}
+                    {% if request.user.is_superuser %}
+                        <a href="" class="dropdown-item nav-link text-dark">Add Product</a>
+                    {% endif %}
+                    <a href="" class="dropdown-item nav-link text-dark">My Account</a>
+                    <a href="" class="dropdown-item nav-link text-dark">Logout</a>
+                {% else %}
+                    <a href="" class="dropdown-item nav-link text-dark">Register</a>
+                    <a href="" class="dropdown-item nav-link text-dark">Login</a>
+                {% endif %}
+            </div>
+        </li>
+        <li class="list-inline-item">
+            <a href="" class="nav-link">
+                <i class="las la-3x la-shopping-bag"></i>
+                {% if product_count > 0 %}
+                    ({{ product_count }})
+                {% endif %}
+            </a>
+        </li>
+    </ul>
+</div>
+
+
