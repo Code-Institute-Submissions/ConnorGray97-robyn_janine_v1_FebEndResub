@@ -1,0 +1,295 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "name": "Radical Compassion Poster",
+        "sku": "pp5002260206",
+        "description": "A 18 x 24 Inch, Typographic and Illustrative poster that has been digitally printed onto a satin finish paper.",
+        "price": 6.5,
+        "category": 1,
+        "image_url": "",
+        "image": "poster_one.jpg"
+    }
+},
+
+{
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "name": "Self Care Poster",
+        "sku": "pp5002601115",
+        "description": "A 18 x 24 Inch, Typographic and Illustrative poster that has been digitally printed onto a satin finish paper.",
+        "price": 6.5,
+        "category": 1,
+        "image_url": "",
+        "image": "poster_two.jpg"
+    }
+},
+
+{
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "name": "Believe in Yourself Poster",
+        "sku": "pp5002601115",
+        "description": "A 18 x 24 Inch, Typographic and Illustrative poster that has been digitally printed onto a satin finish paper.",
+        "price": 6.5,
+        "category": 1,
+        "image_url": "",
+        "image": "poster_three.jpg"
+    }
+},
+
+{
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "name": "Dream Big Poster",
+        "sku": "pp5002601115",
+        "description": "A 18 x 24 Inch, Typographic and Illustrative poster that has been digitally printed onto a satin finish paper.",
+        "price": 6.5,
+        "category": 1,
+        "image_url": "",
+        "image": "poster_four.jpg"
+    }
+},
+    
+{
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "name": "F*&k The Tories typographic",
+        "sku": "pp5002601115",
+        "description": "An A1 size Typographic poster that has been digitally printed onto a glossy finish paper.",
+        "price": 10.0,
+        "category": 2,
+        "image_url": "",
+        "image": "type_one.jpg"
+    }
+
+},
+
+{
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "name": "Bodies Need Respect typographic",
+        "sku": "pp5002601115",
+        "description": "An A1 size Typographic poster that has been digitally printed onto a glossy finish paper.",
+        "price": 10.0,
+        "category": 2,
+        "image_url": "",
+        "image": "type_two.jpg"
+    }
+
+},
+
+{
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+        "name": "Fight Facism typographic",
+        "sku": "pp5002601115",
+        "description": "An A1 size Typographic poster that has been digitally printed onto a glossy finish paper.",
+        "price": 10.0,
+        "category": 2,
+        "image_url": "",
+        "image": "type_three.jpg"
+    }
+
+},
+
+{
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+        "name": "Never Trust A Tory typographic",
+        "sku": "pp5002601115",
+        "description": "An A1 size Typographic poster that has been digitally printed onto a glossy finish paper.",
+        "price": 10.0,
+        "category": 2,
+        "image_url": "",
+        "image": "type_four.jpg"
+    }
+
+},
+
+{
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+        "name": "Trans & Human Rights typographic",
+        "sku": "pp5002601115",
+        "description": "An A1 size Typographic poster that has been digitally printed onto a glossy finish paper.",
+        "price": 10.0,
+        "category": 2,
+        "image_url": "",
+        "image": "type_five.jpg"
+    }
+
+},
+
+{
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "name": "All you can do framed piece 24 x 36 Inches",
+        "sku": "pp5002601115",
+        "description": "All you can do Illustrative/Typographic piece framed in a 24 x 36 inch raw wood frame. Great for the family living room.",
+        "price": 25.99,
+        "category": 3,
+        "image_url": "",
+        "image": "layout_one.jpg"
+    }
+
+},
+
+{
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "name": "Give Yourself Time framed piece 24 x 36 Inches",
+        "sku": "pp5002601115",
+        "description": "Give yourself time to grow Illustrative/Typographic piece framed in a 24 x 36 inch raw wood frame. Great for the family living room.",
+        "price": 25.99,
+        "category": 3,
+        "image_url": "",
+        "image": "layout_two.jpg"
+    }
+
+},
+
+{
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "name": "Give Yourself Time framed piece 24 x 36 Inches",
+        "sku": "pp5002601115",
+        "description": "Give yourself time to grow Illustrative/Typographic piece framed in a 24 x 36 inch raw wood frame. Great for the family living room.",
+        "price": 25.99,
+        "category": 3,
+        "image_url": "",
+        "image": "layout_two.jpg"
+    }
+
+},
+
+{
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+        "name": "Illustrated Valentines Card",
+        "sku": "pp5002601115",
+        "description": "An Illutrated card perfect for that special someone.",
+        "price": 3.99,
+        "category": 4,
+        "image_url": "",
+        "image": "gift_one.jpg"
+    }
+
+},
+
+{
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+        "name": "Positive Postcard Pack",
+        "sku": "pp5002601115",
+        "description": "A pack of four postcards with a positive message on each, perfect for that pick me up that someone might need.",
+        "price": 9.0,
+        "category": 4,
+        "image_url": "",
+        "image": "gift_two.jpg"
+    }
+
+},
+
+{
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+        "name": "Illustrated Valentines Card",
+        "sku": "pp5002601115",
+        "description": "An Illutrated card perfect for that special someone.",
+        "price": 3.99,
+        "category": 4,
+        "image_url": "",
+        "image": "gift_three.jpg"
+    }
+
+},
+
+{
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+        "name": "Hand illstrated wrapping paper",
+        "sku": "pp5002601115",
+        "description": "A roll of hand illustrated wrapping paper with a glossy finish. Great for both birthday gifts and christmas presents.",
+        "price": 7.50,
+        "category": 4,
+        "image_url": "",
+        "image": "gift_four.jpg"
+    }
+
+},
+
+{
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+        "name": "Practice Illustraion",
+        "sku": "pp5002601115",
+        "description": "An A2 print of my kindnes and compassion illustration printed on a matt finish paper.",
+        "price": 9.0,
+        "category": 5,
+        "image_url": "",
+        "image": "ill_one.jpg"
+    }
+
+},
+
+{
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+        "name": "Not Yours Illustraion",
+        "sku": "pp5002601115",
+        "description": "An A2 print of my not yours illustration printed on a matt finish paper.",
+        "price": 9.0,
+        "category": 5,
+        "image_url": "",
+        "image": "ill_two.jpg"
+    }
+
+},
+
+{
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+        "name": "Dream Big Illustraion",
+        "sku": "pp5002601115",
+        "description": "An A2 print of my dream big illustration printed on a matt finish paper.",
+        "price": 9.0,
+        "category": 5,
+        "image_url": "",
+        "image": "ill_three.jpg"
+    }
+
+},
+
+{
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+        "name": "Lucky Dip Bundle Package",
+        "sku": "pp5002601115",
+        "description": "A mixed lucky dip of four pieces of mine 2 smaller and 2 larger. These will be picked at random for an element of surprise.",
+        "price": 40,
+        "category": 6,
+        "image_url": "",
+        "image": "bundle.jpg"
+    }
+
+}]

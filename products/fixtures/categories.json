@@ -1,0 +1,50 @@
+[
+	{
+		"pk": 1,
+		"model": "products.category",
+		"fields": {
+			"name": "posters",
+			"friendly_name": "Posters"
+		}
+	},
+	{
+		"pk": 2,
+		"model": "products.category",
+		"fields": {
+			"name": "typography",
+			"friendly_name": "Typography"
+		}
+	},
+	{
+		"pk": 3,
+		"model": "products.category",
+		"fields": {
+			"name": "framed_peices",
+			"friendly_name": "Framed Pieces"
+		}
+	},
+	{
+		"pk": 4,
+		"model": "products.category",
+		"fields": {
+			"name": "gifts",
+			"friendly_name": "Gifts"
+		}
+	},
+	{
+		"pk": 5,
+		"model": "products.category",
+		"fields": {
+			"name": "illustrations",
+			"friendly_name": "Illustrations"
+		}
+	},
+	{
+		"pk": 6,
+		"model": "products.category",
+		"fields": {
+			"name": "bundles",
+			"friendly_name": "Bundles"
+		}
+	}
+]
