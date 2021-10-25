@@ -53,20 +53,19 @@
 </head>
 
 <body>
-    <header>
-        <div id="navigation-section">
-                <div class="container-fluid">
-                    {% include 'includes/closed-nav.html' %}
-                </div>
-                <div class="container-fluid">
-                    {% include 'includes/open-nav.html' %}
-                </div>
+    <header class="container-fluid fixed-top" id="nav-wrapper">
+        <div id="navigation-section" class="container">
+            <div class="container-fluid">
+                {% include 'includes/closed-nav.html' %}
+            </div>
+            
         </div>
-    
     </header>
+    <div class="container-fluid">
+        {% include 'includes/open-nav.html' %}
+    </div>
 
     {% if messages %}
-    <div class="message-container"></div>
     {% endif %}
     
 
@@ -79,7 +78,7 @@
     {% block postloadjs %}
     {% endblock %}
 
-
+    
 </body>
 
 </html>

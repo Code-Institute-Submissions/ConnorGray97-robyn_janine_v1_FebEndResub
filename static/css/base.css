@@ -1,6 +1,14 @@
 html {
     background-color: rgb(230, 134, 190);
+    z-index: -2;
+    height: 200%;
 }
+
+body {
+  background-color: rgb(230, 134, 190);
+}
+
+
 
 /* Nav Overlay style  ------------------*/
 /*credit.   https://codeconvey.com/build-fullscreen-overlay-hamburger-menu/#google_vignette*/
@@ -172,6 +180,7 @@ html {
 
   /* Home Page  ------------------*/
 
+
 #landing-img {
   position: fixed;
   left: 308px;
@@ -183,9 +192,8 @@ p {
   margin: 0;
   padding: 0;
   position: absolute;
-  font-size: 15vw;
+  font-size: 18vw;
   bottom: 0;
-  text-transform: uppercase;
   right: 11px;
   font-family: 'Alata';
   color: #BF4A67;
@@ -221,6 +229,7 @@ p {
 }
 
 .user-list {
+
   position: fixed;
   right: 53px;
   top: 35px;
@@ -252,16 +261,49 @@ h2 {
   margin: 0;
   padding: 0;
   bottom: 170px;
-  left: 2000px;
+  left: 3000px;
   width: 800px;
   line-height: 60px;
-  font-family: 'Roboto';
+  font-family: serif;
 
 
 }
 
-
 /* End Home Page  ------------------*/
+
+/* Products */
+
+.card-body {
+  background-color: rgb(230, 134, 190);
+}
+
+.card-body span {
+  padding: 10px;
+  color: rgb(255, 235, 59);
+}
+
+#product-container {
+  padding-top: 100px;
+  width: 1500px;
+}
+
+.card-footer {
+  padding: 0;
+  border-top: none;
+}
+
+.card-img, .card-img-top {
+  background: rgb(230, 134, 190);
+  padding-top: 25px;
+}
+
+h1, h1 {
+  font-size: 4.5rem;
+  font-family: 'Alata';
+  color: white;
+}
+
+/* End Products */
 
 
 
