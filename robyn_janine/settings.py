@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-2mf+a_agtlfgti$)%9y9og006s1lrjj=d0375hwp5f4(i322ka
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['robynjanine.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -106,12 +106,18 @@ WSGI_APPLICATION = 'robyn_janine.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 DATABASES = {
     'default': dj_database_url.parse('postgres://fqzzuqzvmbqrbm:0253371a0d0640b47485edd0dbea97d61dbaa7708c202ebe825178bf35164608@ec2-52-211-158-144.eu-west-1.compute.amazonaws.com:5432/dcmah6ree04uv2')
