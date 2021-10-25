@@ -1,1 +1,1 @@
-web:gunicorn robyn_janine.wsgi:application
+web: gunicorn robyn_janine.wsgi:application
