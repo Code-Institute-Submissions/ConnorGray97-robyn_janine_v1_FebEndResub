@@ -282,10 +282,7 @@ h2 {
   color: rgb(255, 235, 59);
 }
 
-#product-container {
-  padding-top: 100px;
-  width: 1500px;
-}
+
 
 .card-footer {
   padding: 0;
@@ -298,7 +295,7 @@ h2 {
 }
 
 h1, h1 {
-  font-size: 4.5rem;
+  font-size: 5vw;
   font-family: 'Alata';
   color: white;
 }
