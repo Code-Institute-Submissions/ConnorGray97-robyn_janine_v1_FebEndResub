@@ -206,7 +206,7 @@ p {
 
 .second-name {
   left: 120px;
-  bottom: 0%;
+  top: 53%;
 }
 
 .socials {
@@ -315,14 +315,23 @@ h1, h1 {
 
 @media screen and (max-width: 480px) {
 
+.first-name {
+  bottom: 25%;
+  left: 30%;
+}
+
+.second-name {
+  left: 47px;
+  top: 67%;
+}
+
+.socials {
+  display: none;
+}
+
 }
 
 @media screen and (max-width: 320px) {
-
-.second-name {
-  left: 98px;
-  bottom: 15%;
-}
 
 .second-name {
   left: 98px;
