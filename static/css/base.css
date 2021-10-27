@@ -201,7 +201,7 @@ p {
 
 .first-name {
   bottom: 25%;
-  right: 304px;
+  left: 37%;
 }
 
 .second-name {
@@ -301,6 +301,28 @@ h1, h1 {
 }
 
 /* End Products */
+
+/* Media Queries */
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+
+/* END Media Queries */
 
 
 
