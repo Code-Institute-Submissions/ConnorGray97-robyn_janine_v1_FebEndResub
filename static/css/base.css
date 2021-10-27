@@ -182,6 +182,8 @@ body {
 
 
 #landing-img {
+  background: url(/media/layout_two.jpg) no-repeat center;
+  background-size: cover;
   position: fixed;
   left: 308px;
   top: 100px;
