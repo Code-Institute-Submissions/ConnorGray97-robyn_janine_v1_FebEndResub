@@ -210,7 +210,6 @@ body {
   top: 39%;
   left: 19%;
   text-indent: 10%;
-  z-index: 999;
 }
 
 .socials {
@@ -302,6 +301,7 @@ h1, h1 {
   font-size: 5vw;
   font-family: 'Alata';
   color: white;
+  padding-top: 100px;
 }
 
 .lead {
