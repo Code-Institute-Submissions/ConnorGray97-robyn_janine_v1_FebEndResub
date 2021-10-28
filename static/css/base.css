@@ -1,7 +1,6 @@
 html {
     background-color: rgb(230, 134, 190);
     z-index: -2;
-    height: 200%;
 }
 
 body {
@@ -179,7 +178,9 @@ body {
   /* Media Queries  ------------------*/
 
   /* Home Page  ------------------*/
-
+.page-height {
+  height: 200%;
+}
 
 #landing-img {
   position: fixed;
