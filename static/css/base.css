@@ -199,16 +199,6 @@ body {
   color: #BF4A67;
 }
 
-.first-name {
-  bottom: 25%;
-  left: 37%;
-}
-
-.second-name {
-  left: 120px;
-  top: 53%;
-}
-
 .socials {
   position: fixed;
   bottom: 0;
@@ -300,6 +290,13 @@ h1, h1 {
   color: white;
 }
 
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  background: #E6567A;
+  font-family: 'Alata', serif;
+}
+
 /* End Products */
 
 /* Media Queries */
@@ -315,16 +312,6 @@ h1, h1 {
 
 @media screen and (max-width: 480px) {
 
-.first-name {
-  bottom: 25%;
-  left: 30%;
-}
-
-.second-name {
-  left: 47px;
-  top: 67%;
-}
-
 .socials {
   display: none;
 }
@@ -333,10 +320,6 @@ h1, h1 {
 
 @media screen and (max-width: 320px) {
 
-.second-name {
-  left: 98px;
-  bottom: 15%;
-}
 
 }
 
