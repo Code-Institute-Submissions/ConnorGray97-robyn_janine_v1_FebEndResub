@@ -188,7 +188,7 @@ body {
   /* Home Page  ------------------*/
 
 #home-hero {
-  background: url('/media/robyn-hero.png') no-repeat center;
+  background: url('/media/layout_one.jpg') no-repeat center;
   background-size: cover;
   height: 800px;
 
@@ -202,7 +202,7 @@ body {
   position: fixed;
   left: 308px;
   top: 100px;
-  width: 29vw;
+
 } 
 
 .names > p {
