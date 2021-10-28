@@ -15,8 +15,8 @@ body {
 #navigation-section {
   height: 100px;
   width: 100%;
-  z-index: 9;
-  background: #BF4A67;
+  color: #BF4A67;
+  z-index: 999;
 }
 
 .fullnav {
@@ -135,7 +135,7 @@ body {
   
   .fullnavBtn {
     position: fixed;
-    top: 50px;
+    top: 38px;
     left: 53px;
     height: 27px;
     width: 60px;
@@ -150,19 +150,19 @@ body {
   .fullnavBtn.active .top {
     -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
             transform: translateY(11px) translateX(0) rotate(45deg);
-    background: #FFF;
+    background: #E6567A;
   }
   .fullnavBtn.active .middle {
     opacity: 0;
-    background: #FFF;
+    background: #E6567A;
   }
   .fullnavBtn.active .bottom {
     -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
             transform: translateY(-11px) translateX(0) rotate(-45deg);
-    background: #FFF;
+    background: #E6567A;
   }
   .fullnavBtn span {
-    background: #BF4A67;
+    background: #fff;
     border: none;
     height: 2px;
     width: 100%;
@@ -233,17 +233,17 @@ body {
 
   position: fixed;
   right: 53px;
-  top: 35px;
+  top: 16px;
   color: #BF4A67;
 }
 
 .user-list a {
-  color: #BF4A67;
+  color: #FFF;
   text-decoration: none;
 }
 
 .user-list a:hover {
-  color: #FFF;
+  color: #E6567A;
   cursor: pointer;
 }
 
