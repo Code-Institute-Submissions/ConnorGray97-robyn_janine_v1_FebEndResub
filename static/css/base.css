@@ -193,10 +193,13 @@ body {
   padding: 0;
   position: absolute;
   font-size: 18vw;
-  bottom: 0;
   right: 11px;
   font-family: 'Alata';
+  line-height: 72%;
   color: #BF4A67;
+  top: 39%;
+  left: 19%;
+  text-indent: 200px;
 }
 
 .socials {
