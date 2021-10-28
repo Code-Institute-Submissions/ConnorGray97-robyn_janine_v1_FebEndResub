@@ -310,6 +310,9 @@ h1, h1 {
   font-family: 'Alata', serif;
 }
 
+.detail-container {
+  padding-top: 120px;
+}
 
 .product-details-container {
   padding: 0 25px 25px 25px;
