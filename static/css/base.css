@@ -302,7 +302,7 @@ h1, h1 {
 }
 
 .detail-container {
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 .product-details-container {
@@ -325,7 +325,7 @@ h1, h1 {
 .p-description {
   font-family: 'Space Mono', serif;
   color: #000;
-  font-size: 25px;
+  font-size: 16px;
 }
 
 /* End Products */
