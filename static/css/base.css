@@ -285,7 +285,7 @@ h2 {
 
 .card-img, .card-img-top {
   background: rgb(230, 134, 190);
-  padding-top: 25px;
+  padding: 0 25px 25px 25px;
 }
 
 h1, h1 {
