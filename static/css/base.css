@@ -186,6 +186,14 @@ body {
   /* Media Queries  ------------------*/
 
   /* Home Page  ------------------*/
+
+#home-hero {
+  background: url('/media/layout_two.jpg') no-repeat center;
+  background-size: cover;
+  height: 800px;
+  padding-top: 100px
+}
+
 .page-height {
   height: 200vh;
 }
