@@ -1,3 +1,28 @@
+
+### **Languages** ###
+- [Python](https://www.python.org/)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+
+### **Frameworks, Libraries and Programs** ###
+- [Bootstrap](https://getbootstrap.com/) - used to design some elements on the pages as well as help with styling and responsiveness.
+- [AdobeXD](https://www.adobe.com/) - used to create the wireframes.
+- [Google Fonts](https://fonts.google.com/)
+- [Line Awesome](https://icons8.com/line-awesome) - used for the icons.
+- [cdnjs](https://cdnjs.com/)
+- [GitHub](https://github.com/) - used to store the project's code.
+- [Git](https://git-scm.com/) - used for version control.
+- [Gitpod](https://www.gitpod.io/)
+- [SQLite](https://www.sqlite.org/) - relational database used during development.
+- [PostgreSQL](https://www.postgresql.org/) - relational database used for deployed site.
+- [jQuery](https://jquery.com/)
+- [Django](https://www.djangoproject.com/) - used to build the site.
+- [Heroku](https://www.heroku.com/) - used to host the deployed site.
+- [Stripe](https://stripe.com/nl) - used for the payments functionality.
+- [RandomKeygen](https://randomkeygen.com/) - used to generate passwords across the site.
+- [AWS S3](https://aws.amazon.com/s3/) - used for storage of static and media files on the deployed site.
+
 ## Deployment ##
 This project's code is stored on GitHub, the IDE chosen was Gitpod and deployment is done to Heroku.
 
