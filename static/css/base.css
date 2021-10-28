@@ -5,6 +5,7 @@ html {
 
 body {
   background-color: rgb(230, 134, 190);
+  height: calc(100vh - 100px);
 }
 
 
@@ -15,8 +16,9 @@ body {
 #navigation-section {
   height: 100px;
   width: 100%;
-  color: #BF4A67;
+  background: #BF4A67;
   z-index: 999;
+  position: fixed;
 }
 
 .fullnav {
@@ -140,7 +142,7 @@ body {
     height: 27px;
     width: 60px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 1000;
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
   }
@@ -150,16 +152,16 @@ body {
   .fullnavBtn.active .top {
     -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
             transform: translateY(11px) translateX(0) rotate(45deg);
-    background: #E6567A;
+    background: #fff;
   }
   .fullnavBtn.active .middle {
     opacity: 0;
-    background: #E6567A;
+    background: #fff;
   }
   .fullnavBtn.active .bottom {
     -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
             transform: translateY(-11px) translateX(0) rotate(-45deg);
-    background: #E6567A;
+    background: #fff;
   }
   .fullnavBtn span {
     background: #fff;
@@ -208,6 +210,7 @@ body {
   top: 39%;
   left: 19%;
   text-indent: 10%;
+  z-index: 999;
 }
 
 .socials {
