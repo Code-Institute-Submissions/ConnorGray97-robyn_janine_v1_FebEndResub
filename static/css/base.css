@@ -305,8 +305,9 @@ h1, h1 {
   margin-top: 300px;
 }
 
-.product-details {
+.product-details-container {
   padding: 0 25px 25px 25px;
+  display: grid;
 }
 
 .p-name {
