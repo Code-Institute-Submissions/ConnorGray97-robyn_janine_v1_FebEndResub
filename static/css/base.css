@@ -293,7 +293,7 @@ h1, h1 {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
-  background: #E6567A;
+  background: rgb(230, 134, 190);
   font-family: 'Alata', serif;
 }
 
