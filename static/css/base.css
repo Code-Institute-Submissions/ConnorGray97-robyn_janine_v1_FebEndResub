@@ -12,6 +12,13 @@ body {
 /* Nav Overlay style  ------------------*/
 /*credit.   https://codeconvey.com/build-fullscreen-overlay-hamburger-menu/#google_vignette*/
 
+#navigation-section {
+  height: 100px;
+  width: 100%;
+  z-index: 9;
+  background: #BF4A67;
+}
+
 .fullnav {
     font-family: 'Alata';
     position: fixed;
