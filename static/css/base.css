@@ -301,6 +301,31 @@ h1, h1 {
   font-family: 'Alata', serif;
 }
 
+.detail-container {
+  margin-top: 300px;
+}
+
+.product-details {
+  padding: 0 25px 25px 25px;
+}
+
+.p-name {
+  font-family: 'Alata', serif;
+  font-size: 20px;
+  color: #ffebcd;
+}
+
+.p-price {
+  font-size: 25px;
+  font-family: 'Alata';
+  color: #BF4A67;
+}
+
+.p-description {
+  font-family: 'monospace', serif;
+  color: #000;
+}
+
 /* End Products */
 
 /* Media Queries */
