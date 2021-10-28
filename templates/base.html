@@ -55,12 +55,12 @@
 
 <body>
     <header>
-        <div id="navigation-section">
-            <div class="container-fluid px-0 fixed-top d-none d-lg-flex">
-                {% include 'includes/closed-nav.html' %}
-            </div>
+<div id="navigation-section container-fluid">
+    <div class="container-fluid px-0 fixed-top d-none d-lg-flex">
+        {% include 'includes/closed-nav.html' %}
+    </div>
             
-        </div>
+        
     </header>
     <div class="container-fluid">
         {% include 'includes/open-nav.html' %}
@@ -70,6 +70,7 @@
         <a href=""><i class="lab la-facebook-f la-3x"></i></a> <br>
         <a href=""><i class="lab la-twitter la-3x"></i></a> <br>
     </div>
+</div>
 
     {% if messages %}
     {% endif %}
