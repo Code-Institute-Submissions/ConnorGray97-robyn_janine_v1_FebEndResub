@@ -1,10 +1,10 @@
 html {
-    background-color: rgb(230, 134, 190);
+    background-color: #f7a0cb;
     z-index: -2;
 }
 
 body {
-  background-color: rgb(230, 134, 190);
+  background-color: #f7a0cb;
 }
 
 
@@ -186,13 +186,14 @@ body {
   /* Media Queries  ------------------*/
 
   /* Home Page  ------------------*/
-
-#home-hero {
-  background: url('/media/layout_one.jpg') no-repeat center;
-  background-size: cover;
-  height: 800px;
-
+  #home-hero {
+    background: url(/media/robyn-hero.png) no-repeat center;
+    height: 65vh;
+    width: 43vw;
+    background-size: contain;
+    margin-left: 21px;
 }
+
 
 .page-height {
   height: 200vh;
@@ -284,7 +285,7 @@ h2 {
 /* Products */
 
 .card-body {
-  background-color: rgb(230, 134, 190);
+  background-color: #f7a0cb;
 }
 
 .card-body span {
@@ -300,7 +301,7 @@ h2 {
 }
 
 .card-img, .card-img-top {
-  background: rgb(230, 134, 190);
+  background: #f7a0cb;
   padding: 0 25px 25px 25px;
 }
 
@@ -314,7 +315,7 @@ h1, h1 {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
-  background: rgb(230, 134, 190);
+  background: #f7a0cb;
   font-family: 'Alata', serif;
 }
 
