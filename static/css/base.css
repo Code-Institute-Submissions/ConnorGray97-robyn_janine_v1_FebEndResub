@@ -1,6 +1,16 @@
+
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
     background-color: #f7a0cb;
-    z-index: -2;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,9 +28,16 @@ body {
 #navigation-section {
   height: 100px;
   width: 100%;
-  background: #BF4A67;
-  z-index: 999;
-  position: fixed;
+  z-index: 1000;
+}
+
+#open-nav {
+  background-color: #BF4A67;
+  top: 75px;
+}
+
+#closed-nav {
+  background-color: #BF4A67;
 }
 
 

@@ -4,7 +4,7 @@
         <i class="las la-2x la-bars"></i>
     </button>
     <a href="{% url 'home' %}" class="nav-link d-lg-none d-md-flex">
-        <span class="text-black text-uppercase">Robyn Janine</span>
+        <span class="text-white">Robyn Janine</span>
     </a>
     <div class="d-flex flex-row">
         <a href="" class="nav-link text-dark d-lg-none d-xl-none">
@@ -17,34 +17,34 @@
     <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-lg-auto">
             <li class="nav-item px-lg-5">
-                <a class="nav-link active text-uppercase text-dark" href="{% url 'products' %}">Shop</a>
+                <a class="nav-link active text-uppercase text-white" href="{% url 'products' %}">Shop</a>
             </li>
             <li class="nav-item px-lg-5">
-                <a class="nav-link text-uppercase text-dark" href="">Contact</a>
+                <a class="nav-link text-uppercase text-white" href="">Contact</a>
             </li>
             <li class="nav-item px-lg-5">
-                <a class="nav-link text-uppercase text-dark" href="">Blog</a>
+                <a class="nav-link text-uppercase text-white" href="">Blog</a>
             </li>
             <li class="d-lg-none">
                 <ul class="navbar-nav">
                     {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
                             <li class="nav-item">
-                                <a href="{% url 'add_product' %}" class="nav-link text-uppercase text-dark">Add Product</a>
+                                <a href="{% url 'add_product' %}" class="nav-link text-uppercase text-white">Add Product</a>
                             </li>
                         {% endif %}
                         <li>
-                            <a href="" class="nav-link text-uppercase text-dark">My Account</a>
+                            <a href="" class="nav-link text-uppercase text-white">My Account</a>
                         </li>
                         <li>
-                            <a href="{% url 'account_logout' %}" class="nav-link text-uppercase text-dark">Logout</a>
+                            <a href="{% url 'account_logout' %}" class="nav-link text-uppercase text-white">Logout</a>
                         </li>
                     {% else %}
                         <li>
-                            <a href="{% url 'account_signup' %}" class="nav-link text-uppercase text-dark">Register</a>
+                            <a href="{% url 'account_signup' %}" class="nav-link text-uppercase text-white">Register</a>
                         </li>
                         <li>
-                            <a href="{% url 'account_login' %}" class="nav-link text-uppercase text-dark">Login</a>
+                            <a href="{% url 'account_login' %}" class="nav-link text-uppercase text-white">Login</a>
                         </li>
                     {% endif %}
                 </ul>
