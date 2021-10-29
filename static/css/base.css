@@ -9,10 +9,11 @@ body {
 
 #footer {
   width: 100%;
-  bottom: 0;
   position: absolute;
+  margin-top: 215px;
+  padding-bottom: 90px;
+  background: #BF4A67;
 }
-
 
 
 /* Nav Overlay style  ------------------*/
@@ -24,6 +25,7 @@ body {
   background: #BF4A67;
   z-index: 999;
   position: fixed;
+  clear: both;
 }
 
 .fullnav {
