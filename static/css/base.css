@@ -36,7 +36,7 @@ body {
   top: 75px;
 }
 
-#closed-nav {
+#main-nav {
   background-color: #BF4A67;
 }
 
@@ -219,6 +219,17 @@ h1, h1 {
 @media screen and (max-width: 1024px) {
 
 }
+
+@media screen and (max-width: 990px) {
+  .navbar {
+    background-color: #BF4A67;
+    top: 75px;
+  }
+
+
+}
+
+
 
 @media screen and (max-width: 768px) {
 
