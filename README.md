@@ -1,4 +1,13 @@
 # User Experience
+## Design
+This theme was chosen to fit the overall feminine power theme that Robyn has with her artwork. I chose a color, in the case F7A0CB, that displayed most throughout her work and developed the rest of the theme around that colour. The theme worked well with the bold and playfull style of her artwork.
+
+- 000000 - Was used for the product description text throughout.
+- BF4A67 - Was used for the header and foolter of the webpage and some link elements.
+- F7A0CB - Was used as the whole web applications background color. This was chosen from one of the illustrations that was supplied to me.
+- FFEEDD - Was only used for the titles in the product description pages. It matched the overall theme and made a nice change from the proposed white. 
+![Coolers Colour pallette](/docs/readme_images/Coolers.png "Colour Pallette")
+
 ## User Stories
 
 ### As an unregistered, I want to :
