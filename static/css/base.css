@@ -212,6 +212,11 @@ body {
 
 } 
 
+.names {
+  width: 100%;
+  height: 1000px;
+}
+
 .names > p {
   margin: 0;
   padding: 0;
