@@ -31,7 +31,7 @@ body {
   z-index: 1000;
 }
 
-#open-nav {
+.navbar {
   background-color: #BF4A67;
   top: 75px;
 }
