@@ -1,29 +1,30 @@
-<div class="col-12 user-container">
-    <ul class="list-inline list-unstyled text-center text-lg-right my-0 user-list d-sm-block">
-        <li class="list-inline-item dropdown">
-            <a class="dropdown-toggle text-decoration-none" aria-haspopup="true" id="dropdownMenuButton1" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                <span><i class="las la-3x la-user"></i></span>
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="dropdownMenuButton1">
-                {% if request.user.is_authenticated %}
-                    {% if request.user.is_superuser %}
-                        <a href="" class="dropdown-item nav-link text-dark">Add Product</a>
+
+    <div class="col-12 user-container">
+        <ul class="list-inline list-unstyled text-center text-lg-right my-0 user-list d-sm-block">
+            <li class="list-inline-item dropdown">
+                <a class="dropdown-toggle text-decoration-none" aria-haspopup="true" id="dropdownMenuButton1" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span><i class="las la-3x la-user"></i></span>
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="dropdownMenuButton1">
+                    {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                            <a href="" class="dropdown-item nav-link text-dark">Add Product</a>
+                        {% endif %}
+                        <a href="" class="dropdown-item nav-link text-dark">My Account</a>
+                        <a href="{% url 'account_logout' %}" class="dropdown-item nav-link text-dark">Logout</a>
+                    {% else %}
+                        <a href="{% url 'account_signup' %}" class="dropdown-item nav-link text-dark">Register</a>
+                        <a href="{% url 'account_login' %}" class="dropdown-item nav-link text-dark">Login</a>
                     {% endif %}
-                    <a href="" class="dropdown-item nav-link text-dark">My Account</a>
-                    <a href="{% url 'account_logout' %}" class="dropdown-item nav-link text-dark">Logout</a>
-                {% else %}
-                    <a href="{% url 'account_signup' %}" class="dropdown-item nav-link text-dark">Register</a>
-                    <a href="{% url 'account_login' %}" class="dropdown-item nav-link text-dark">Login</a>
-                {% endif %}
-            </div>
-        </li>
-        <li class="list-inline-item">
-            <a href="" class="nav-link">
-                <i class="las la-3x la-shopping-bag"></i>
-                {% if product_count > 0 %}
-                    ({{ product_count }})
-                {% endif %}
-            </a>
-        </li>
-    </ul>
-</div>
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <a href="" class="nav-link">
+                    <i class="las la-3x la-shopping-bag"></i>
+                    {% if product_count > 0 %}
+                        ({{ product_count }})
+                    {% endif %}
+                </a>
+            </li>
+        </ul>
+    </div>

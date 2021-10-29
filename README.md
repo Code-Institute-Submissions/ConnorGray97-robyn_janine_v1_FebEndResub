@@ -1,3 +1,30 @@
+# User Experience
+## User Stories
+
+### As an unregistered, I want to :
+
++ be able to browse through all products available.
++ be able to keep up to date with the latest new through the blog post.
++ be able to view my bag and any items I currently have awaiting payment in my bag.
++ be able to add, edit quantity and remove items from my bag.
++ have generic questions answered through a FAQs page without the need to contact the site owner.
++ be able to purchase items from the site with or without an account.
++ to be able to register the site if I choose to keep up to date.
+
+### As a registered user, I want to:
+
++ have the ability to log in to the site.
++ have a record of any purchases that I have made in the past and view them in detail.
++ be able to update my shipping information.
++ be able to update my shipping information from the checkout page. 
+
+### As the site administrator, I want to:
+
++ be able to log in to an admin panel.
++ be able to add, update or remove products and update blog posts without the need for the admin panel.
++ Get an email notifications when a user submits through the contact page.
+
+# Technologies Used
 
 ### **Languages** ###
 - [Python](https://www.python.org/)
@@ -23,7 +50,8 @@
 - [RandomKeygen](https://randomkeygen.com/) - used to generate passwords across the site.
 - [AWS S3](https://aws.amazon.com/s3/) - used for storage of static and media files on the deployed site.
 
-## Deployment ##
+# Deployment
+
 This project's code is stored on GitHub, the IDE chosen was Gitpod and deployment is done to Heroku.
 
 ### **Run the project locally** ###
