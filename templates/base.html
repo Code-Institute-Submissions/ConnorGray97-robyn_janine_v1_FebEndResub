@@ -56,27 +56,16 @@
 <body>
 <header>
     <div id="navigation-section">
-
         <div class="container-fluid px-0 fixed-top d-none d-lg-flex" id="top-nav">
-            <div class="col-12 col-lg-4 my-auto pt-1 py-lg-0">
-                <form method="GET" action="{% url 'products' %}">
-                    <div class="input-group border-black">
-                        <input class="form-control" type="text" name="q">
-                        <div class="input-group-append">
-                            <button class="form-control" type="submit">
-                                <i class="las la-2x la-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            <div class="container-fluid">
                 {% include 'includes/closed-nav.html' %}
+            </div>
         </div>
     </div>
 </header>
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     {% include 'includes/open-nav.html' %}
-</div>
+</div> -->
 
 
     {% if messages %}
