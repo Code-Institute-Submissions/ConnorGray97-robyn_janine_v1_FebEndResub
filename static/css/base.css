@@ -7,6 +7,12 @@ body {
   background-color: #f7a0cb;
 }
 
+#footer {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
 
 
 /* Nav Overlay style  ------------------*/
@@ -347,6 +353,8 @@ h1, h1 {
 }
 
 /* End Products */
+
+
 
 /* Media Queries */
 
