@@ -31,14 +31,16 @@ body {
   z-index: 1000;
 }
 
+#main-nav {
+  background-color: #BF4A67;
+}
+
 #mobile-nav {
   background-color: #BF4A67;
   top: 75px;
 }
 
-#main-nav {
-  background-color: #BF4A67;
-}
+
 
 
   /* Media Queries  ------------------*/
@@ -222,8 +224,7 @@ h1, h1 {
 
 @media screen and (max-width: 990px) {
   #mobile-nav {
-    background-color: #BF4A67;
-    top: 75px;
+    top: 0;
   }
 
 
