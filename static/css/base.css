@@ -39,6 +39,14 @@ body {
   background-color: #BF4A67;
   top: 75px;
 }
+.nav-title {
+  font-family: 'Alata';
+  font-size: 35px;
+}
+
+.navbar {
+  z-index: 1000;
+}
 
 
 
@@ -225,6 +233,10 @@ h1, h1 {
 @media screen and (max-width: 990px) {
   #mobile-nav {
     top: 0;
+  }
+
+  .nav-link > span {
+    font-size: 16px;
   }
 
 
