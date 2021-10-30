@@ -22,15 +22,15 @@
             <h1>Products.</h1>
         </div>
     </div>
-    <div class="col-12">
+    <div class="col-12" id= "filters-container">
         <p class="text-uppercase">Filter by:</p>
         <div class="row mb-3">
             <div class="col-lg-6 col-sm-12" id="filters-container">
-                <a href="{% url 'products' %}?category=posters" class="btn text-uppercase">Posters</a>
-                <a href="{% url 'products' %}?category=typography" class="btn text-uppercase">Typography</a>
-                <a href="{% url 'products' %}?category=framed Pieces" class="btn text-uppercase">Framed Pieces</a>
-                <a href="{% url 'products' %}?category=gifts" class="btn text-uppercase">Gifts</a>
-                <a href="{% url 'products' %}?category=illustrations" class="btn text-uppercase">Illustrations</a>
+                <a href="{% url 'products' %}?category=posters" class="btn">Posters</a>
+                <a href="{% url 'products' %}?category=typography" class="btn">Typography</a>
+                <a href="{% url 'products' %}?category=framed_pieces" class="btn">Framed Pieces</a>
+                <a href="{% url 'products' %}?category=gifts" class="btn">Gifts</a>
+                <a href="{% url 'products' %}?category=illustrations" class="btn">Illustrations</a>
             </div>
         </div>
     </div>

@@ -28,7 +28,6 @@ body {
 #navigation-section {
   height: 100px;
   width: 100%;
-  z-index: 1000;
 }
 
 #main-nav {
@@ -44,9 +43,7 @@ body {
   font-size: 35px;
 }
 
-.navbar {
-  z-index: 1000;
-}
+
 
 
 
@@ -218,6 +215,22 @@ h1, h1 {
   color: #000;
   font-size: 16px;
 }
+
+#filters-container {
+  padding-left: 180px;
+}
+
+#filters-container a {
+  font-family: 'Alata', serif;
+  border: 2px solid #BF4A67;
+  color: #BF4A67;
+}
+
+#filters-container a:hover {
+  color: #FFF;
+}
+
+
 
 /* End Products */
 
