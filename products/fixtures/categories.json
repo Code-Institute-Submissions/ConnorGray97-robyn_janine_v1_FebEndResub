@@ -19,7 +19,7 @@
 		"pk": 3,
 		"model": "products.category",
 		"fields": {
-			"name": "framed_peices",
+			"name": "framed_pieces",
 			"friendly_name": "Framed Pieces"
 		}
 	},
