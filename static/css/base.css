@@ -23,6 +23,7 @@ body {
   margin-top: 215px;
   padding-bottom: 90px;
   background: #BF4A67;
+  bottom: 0;
 }
 
 #navigation-section {
@@ -217,7 +218,8 @@ h1, h1 {
 }
 
 #filters-container {
-  padding-left: 180px;
+  padding-left: 10vw;
+  padding-bottom: 30px;
 }
 
 #filters-container a {
