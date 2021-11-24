@@ -9,8 +9,8 @@
 }
 
 html {
-    background-color: #f7a0cb;
-    scroll-behavior: smooth;
+  background-color: #f7a0cb;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,6 +43,10 @@ body {
   font-size: 35px;
 }
 
+.navbar-collapse {
+  padding: 30px;
+}
+
 
 
 
@@ -51,12 +55,12 @@ body {
   /* Media Queries  ------------------*/
 
   /* Home Page  ------------------*/
-  #home-hero {
-    background: url(/media/robyn-hero.png) no-repeat center;
-    height: 65vh;
-    width: 43vw;
-    background-size: contain;
-    margin-left: 21px;
+#home-hero {
+  background: url(/media/robyn-hero.png) no-repeat center;
+  height: 65vh;
+  width: 43vw;
+  background-size: contain;
+  margin-left: 21px;
 }
 
 

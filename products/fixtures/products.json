@@ -160,21 +160,6 @@
 },
 
 {
-    "pk": 12,
-    "model": "products.product",
-    "fields": {
-        "name": "Give Yourself Time framed piece 24 x 36 Inches",
-        "sku": "pp5002601115",
-        "description": "Give yourself time to grow Illustrative/Typographic piece framed in a 24 x 36 inch raw wood frame. Great for the family living room.",
-        "price": 25.99,
-        "category": 3,
-        "image_url": "",
-        "image": "layout_two.jpg"
-    }
-
-},
-
-{
     "pk": 13,
     "model": "products.product",
     "fields": {
