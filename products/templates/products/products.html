@@ -27,16 +27,16 @@
             <!--Breadcrumbs-->
             <div class="col-sm-6 col-12">
                 <div class="breadcrumb" style="--bs-breadcrumb-divider: '|';">
-                    <a href="{% url 'home' %}" class="breadcrumb-item text-uppercase text-decoration-none">Home</a>
-                    <a href="{% url 'products' %}" class="breadcrumb-item text-uppercase text-decoration-none">Shop</a>
+                    <a href="{% url 'home' %}" class="breadcrumb-item text-uppercase text-decoration-none text-white">Home</a>
+                    <a href="{% url 'products' %}" class="breadcrumb-item text-uppercase text-decoration-none text-white">Shop</a>
                     {% if current_categories %}
                         {% for category in current_categories %}
-                            <p class="breadcrumb-item active text-dark fw-bold text-uppercase">{{ category }} ({{ products|length}})</p>
+                            <p class="breadcrumb-item active fw-bold text-uppercase text-white">{{ category }} ({{ products|length}})</p>
                         {% endfor %}
                     {% elif search_term %}
-                        <p class="breadcrumb-item active text-dark fw-bold text-uppercase"> Results for "{{ search_term|truncatechars:20 }}" ({{ products|length}})</p>
+                        <p class="breadcrumb-item active fw-bold text-uppercase text-white"> Results for "{{ search_term|truncatechars:20 }}" ({{ products|length}})</p>
                     {% else %}
-                        <p class="breadcrumb-item active text-dark fw-bold text-uppercase">All products ({{ products|length}})</p>
+                        <p class="breadcrumb-item active text-dark fw-bold text-uppercase text-white">All products ({{ products|length}})</p>
                     {% endif %}
                 </div>
             </div>            
@@ -124,4 +124,37 @@
     </div>
 </div>
 
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script>
+		$('#scroll-to-top').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
+    
+    <script>
+        $('#dropdown-select').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+        });
+    </script>
+    
 {% endblock %}

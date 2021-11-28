@@ -29,10 +29,10 @@
                                 <a href="" class="dropdown-item nav-link text-dark">Add Product</a>
                             {% endif %}
                             <a href="" class="dropdown-item nav-link text-dark">My Account</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item nav-link text-white">Logout</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item nav-link text-dark">Logout</a>
                         {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item nav-link text-white">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item nav-link text-white">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item nav-link text-dark">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item nav-link text-dark">Login</a>
                         {% endif %}
                     </div>
                 </li>

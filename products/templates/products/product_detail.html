@@ -14,11 +14,11 @@
                 <div class="row mb-3">
                     <!--Breadcrumbs-->
                     <div class="col-sm-6 col-12">
-                        <div class="breadcrumb" style="--bs-breadcrumb-divider: '|' white;">
+                        <div class="breadcrumb" style="--bs-breadcrumb-divider: '|';">
                             <a href="{% url 'home' %}" class="breadcrumb-item text-uppercase text-decoration-none text-white">Home</a>
                             <a href="{% url 'products' %}" class="breadcrumb-item text-uppercase text-decoration-none text-white">Shop</a>
                             <a href="{% url 'products' %}?category={{ product.category }}" class="breadcrumb-item text-uppercase text-decoration-none">{{ product.category }}</a>
-                            <p class="active breadcrumb-item fw-bold text-uppercase">{{ product.name }}</p>
+                            <p class="active breadcrumb-item fw-bold text-uppercase">{{ product.friendly_name }}</p>
                         </div>
                     </div>
                 </div>
