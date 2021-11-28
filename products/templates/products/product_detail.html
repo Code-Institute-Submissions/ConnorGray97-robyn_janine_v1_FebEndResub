@@ -8,20 +8,21 @@
 {% block content %}
 <div class="overlay"></div>
     <div class="container-fluid">
-        <div class="container">
-            <div class="row mb-3">
-                <!--Breadcrumbs-->
-                <div class="col-sm-6 col-12">
-                    <div class="breadcrumb" style="--bs-breadcrumb-divider: '|';">
-                        <a href="{% url 'home' %}" class="breadcrumb-item text-uppercase text-decoration-none">Home</a>
-                        <a href="{% url 'products' %}" class="breadcrumb-item text-uppercase text-decoration-none">Shop</a>
-                        <a href="{% url 'products' %}?category={{ product.category }}" class="breadcrumb-item text-uppercase text-decoration-none">{{ product.category }}</a>
-                        <p class="active breadcrumb-item fw-bold text-uppercase">{{ product.name }}</p>
+        
+        <div class="row detail-container">
+            <div class="container">
+                <div class="row mb-3">
+                    <!--Breadcrumbs-->
+                    <div class="col-sm-6 col-12">
+                        <div class="breadcrumb" style="--bs-breadcrumb-divider: '|' white;">
+                            <a href="{% url 'home' %}" class="breadcrumb-item text-uppercase text-decoration-none text-white">Home</a>
+                            <a href="{% url 'products' %}" class="breadcrumb-item text-uppercase text-decoration-none text-white">Shop</a>
+                            <a href="{% url 'products' %}?category={{ product.category }}" class="breadcrumb-item text-uppercase text-decoration-none">{{ product.category }}</a>
+                            <p class="active breadcrumb-item fw-bold text-uppercase">{{ product.name }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row detail-container">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
                     {% if product.image %}
