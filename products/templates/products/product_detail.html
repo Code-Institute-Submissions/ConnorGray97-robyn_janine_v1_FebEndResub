@@ -44,7 +44,7 @@
                     <span class="lead mb-0 text-left font-weight-bold p-price">${{ product.price }}</span>
                     <span class="mt-3 p-description">{{ product.description }}</span>
                     <span class="text-uppercase">Qty</span>
-                    <form action="" class="form" method="POST">
+                    <form action="{% url 'add_to_bag' product.id %}" class="form" method="POST">
                         {% csrf_token %}
                         <div class="quantity-container my-3">
                             <div class="input-group">
