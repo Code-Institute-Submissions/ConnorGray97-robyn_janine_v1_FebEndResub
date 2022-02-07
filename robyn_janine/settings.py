@@ -130,7 +130,7 @@ else:
     }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://fqzzuqzvmbqrbm:0253371a0d0640b47485edd0dbea97d61dbaa7708c202ebe825178bf35164608@ec2-52-211-158-144.eu-west-1.compute.amazonaws.com:5432/dcmah6ree04uv2')
+    'default': dj_database_url.parse('postgres://ectjvyxirvdmjg:9f828c75e5589d4d8e78b118a993d2ea05d63342533097bcb3185e9d628f73b9@ec2-99-81-18-35.eu-west-1.compute.amazonaws.com:5432/df62sciajjn5gp')
 }
 
 
