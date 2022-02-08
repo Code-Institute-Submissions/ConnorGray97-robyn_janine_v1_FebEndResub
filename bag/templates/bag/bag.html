@@ -40,7 +40,7 @@
                         <p class="fs-6 card-text text-uppercase fw-bold">{{ item.product.name }}<span
                                 class="px-3">${{ item.product.price }}</span></p>
                         <p class="text-uppercase">Qty: {{ item.quantity }}</p>
-                        <form action="" class="form my-3 update-form" method="POST">
+                        <form action="{% url 'adjust_bag' item.item_id %}" class="form my-3 update-form" method="POST">
                             {% csrf_token %}
                             <div class="quantity-container my-3">
                                 <div class="input-group">
