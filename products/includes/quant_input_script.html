@@ -1,0 +1,46 @@
+<script>
+
+    // Increment when btn clicked
+    $('.incr-btn').click(function(e) {
+       e.preventDefault();
+       var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+       var currentValue = parseInt($(closestInput).val());
+       $(closestInput).val(currentValue + 1);
+       var itemId = $(this).data('item_id');
+       handleEnableDisable(itemId);
+    });
+
+    // Decrement when btn clicked
+    $('.decr-btn').click(function(e) {
+       e.preventDefault();
+       var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+       var currentValue = parseInt($(closestInput).val());
+       $(closestInput).val(currentValue - 1);
+       var itemId = $(this).data('item_id');
+       handleEnableDisable(itemId);
+    });
+
+    // Disable +/- buttons outside 1-5 range
+    function handleEnableDisable(itemId) {
+        var currentValue = parseInt($(`#id_qty_${itemId}`).val());
+        var minusDisabled = currentValue < 2;
+        var plusDisabled = currentValue > 4;
+        $(`#decr-btn_${itemId}`).prop('disabled', minusDisabled);
+        $(`#incr-btn_${itemId}`).prop('disabled', plusDisabled);
+    }
+
+    // Ensure enabling/disabling of inputs on page load
+    var allQtyInputs = $('.qty_input');
+    for(var i = 0; i < allQtyInputs.length; i++){
+        var itemId = $(allQtyInputs[i]).data('item_id');
+        handleEnableDisable(itemId);
+    }
+
+    // Check enable/disable when input is changed
+    $('.qty_input').change(function() {
+        var itemId = $(this).data('item_id');
+        handleEnableDisable(itemId);
+    });
+
+
+</script>
