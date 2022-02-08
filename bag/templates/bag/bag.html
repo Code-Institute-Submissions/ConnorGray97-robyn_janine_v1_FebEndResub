@@ -26,24 +26,69 @@
     </div>
     <div class="container">
         <h4 class="text-uppercase">Your bag</h4>
-    </div>
-    <div class="row">
-        <div class="col">
-            {% if bag_items %}
-                <div class="table-responsive rounded">
-                    {{ bag_items }}
+        {% if bag_items %}
+            {% for item in bag_items %}
+                <div class="row my-3">
+                    <div class="col-lg-4 col-12 mb-3">
+                        {% if item.product.image %}
+                            <img src="{{ item.product.image.url }}" alt="{{ product.name }}" class="img-fluid">
+                        {% else %}
+                            <img src="{{ MEDIA_URL }}no_image.png" alt="{{ item.product.name }}" class="img-fluid">
+                        {% endif %}
+                    </div>
+                    <div class="col-lg-4 col-12 mb-3">
+                        <p class="fs-6 card-text text-uppercase fw-bold">{{ item.product.name }}<span
+                                class="px-3">${{ item.product.price }}</span></p>
+                        <p class="text-uppercase">Qty: {{ item.quantity }}</p>
+                        <form action="" class="form my-3 update-form" method="POST">
+                            {% csrf_token %}
+                            <div class="quantity-container my-3">
+                                <div class="input-group">
+                                    <div>
+                                        <button class="decr-btn btn border-none" data-item_id="{{ item.item_id }}" id="decr-btn_{{ item.item_id }}">
+                                            <span><i class="las la-minus"></i></span>
+                                        </button>
+                                    </div>
+                                    <input type="number" class="qty_input mx-3 px-3" name="quantity" value="{{ item.quantity }}"
+                                                    min="1" max="10" data-item_id="{{ item.item_id }}"
+                                                    id="id_qty_{{ item.item_id }}">
+                                    <div>
+                                        <button class="incr-btn btn border-none" data-item_id="{{ item.item_id }}" id="incr-btn_{{ item.item_id }}">
+                                            <span><i class="las la-plus"></i></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <a class="update-link text-uppercase text-decoration-none"><i
+                                class="mx-3 text-dark las la-2x la-sync-alt"></i></a>
+                        <a class="text-uppercase text-decoration-none remove-link" id="remove_{{ item.item_id }}"><i
+                                class="text-danger las la-2x la-trash-alt"></i></a>
+                    </div>
+                    <div class="col-lg-4 col-12 mb-3">
+                        <p class="text-uppercase fw-light">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                    </div>
                 </div>
-            {% else %}
-                <p class="lead mb-5">Your bag is empty.</p>
-                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">Keep Shopping</span>
-                </a>
-            {% endif %}
-        </div>
+            {% endfor %}
+            <div class="row py-3">
+                <p class="text-uppercase fw-bold fs-5 my-0">Total: ${{ grand_total|floatformat:2 }}</p>
+                {% if delivery == 0 %}
+                    <p>You get FREE delivery for this order!</p>
+                {% else %}
+                    <p class="text-uppercase text-muted">Delivery: ${{ delivery|floatformat:2 }} </p>
+                {% endif %}
+            </div>
+            <div class="mt-2 mb-5">
+                <a href="{% url 'checkout' %}" class="btn btn-lg btn-dark text-decoration-none text-uppercase"><i class="las la-lock"></i> Secure Checkout</a>
+            </div>
+        {% else %}
+            <p>You have no products yet!</p>
+            <div class="pb-4 pt-2"><a href="{% url 'products' %}" class="btn btn-lg btn-dark text-uppercase hvr-skew-backward">
+                <i class="las la-angle-left"></i>Back to shopping </a>
+            </div>
+        {% endif %}
     </div>
+</div>
 </div>
 </div>
  
