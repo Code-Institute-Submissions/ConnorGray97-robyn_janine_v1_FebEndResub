@@ -192,6 +192,7 @@ h1, h1 {
 .product-details-container {
   padding: 0 25px 25px 25px;
   display: grid;
+  text-align: left;
 }
 
 .p-name {
