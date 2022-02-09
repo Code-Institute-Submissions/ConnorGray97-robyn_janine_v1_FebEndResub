@@ -74,10 +74,16 @@
     {% endblock %}
 </main>
 
-{% include 'includes/footer.html' %}
+    {% include 'includes/footer.html' %}
+    {% include 'includes/messages.html' %}
 
 
     {% block postloadjs %}
+    <script>
+        $( document ).ready(function() {
+            $('.toast').toast('show');
+        });     
+    </script>
     {% endblock %}
 
     
