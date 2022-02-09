@@ -251,6 +251,16 @@ h1, h1 {
   top: 70px;
   right: 20px;
 }
+
+.custom-toast {
+  overflow: visible;
+}
+
+.bag-notification-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 150px;
+}
 /* End Toasts */
 
 
