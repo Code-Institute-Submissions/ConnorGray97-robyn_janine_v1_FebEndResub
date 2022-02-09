@@ -29,7 +29,7 @@
         <h4 class="text-uppercase">Your bag</h4>
         {% if bag_items %}
             {% for item in bag_items %}
-                <div class="row my-3">
+                <div class="row my-3 bag-item">
                     <div class="col-lg-4 col-12 mb-3">
                         {% if item.product.image %}
                             <img src="{{ item.product.image.url }}" alt="{{ product.name }}" class="img-fluid">
