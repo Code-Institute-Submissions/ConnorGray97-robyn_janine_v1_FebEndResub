@@ -195,6 +195,12 @@ h1, h1 {
   text-align: left;
 }
 
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  text-align: left;
+}
+
 .p-name {
   font-family: 'Alata', serif;
   font-size: 20px;
