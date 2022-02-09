@@ -29,7 +29,7 @@ def add_to_bag(request, item_id):
             messages.error(
                 request, "It's not possible to order more than 5")
     else:
-        if quantity <= 10:
+        if quantity <= 5:
             bag[item_id] = quantity
             messages.success(
                 request, f'Added {product.name} to your bag'
