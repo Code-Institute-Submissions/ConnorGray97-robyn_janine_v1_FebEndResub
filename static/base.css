@@ -1,0 +1,408 @@
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  html {
+    background-color: #f7a0cb;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #f7a0cb;
+    text-align: center;
+  }
+  
+  #footer {
+    width: 100%;
+    margin-top: 215px;
+    padding-bottom: 90px;
+    background: #BF4A67;
+    bottom: 0;
+  }
+  
+  #navigation-section {
+    height: 100px;
+    width: 100%;
+  }
+  
+  #main-nav {
+    background-color: #BF4A67;
+  }
+  
+  #mobile-nav {
+    background-color: #BF4A67;
+    top: 75px;
+  }
+  .nav-title {
+    font-family: 'Alata';
+    font-size: 35px;
+  }
+  
+    /* Media Queries  ------------------*/
+  
+    /* Home Page  ------------------*/
+  #home-hero {
+    background: url(/media/robyn-hero.png) no-repeat center;
+    height: 65vh;
+    width: 43vw;
+    background-size: contain;
+    margin-left: 21px;
+  }
+  
+  
+  .page-height {
+    height: 200vh;
+  }
+  
+  #landing-img {
+    position: fixed;
+    left: 308px;
+    top: 100px;
+  
+  } 
+  
+  .names {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .names > p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-size: 18vw;
+    right: 11px;
+    font-family: 'Alata';
+    line-height: 72%;
+    color: #BF4A67;
+    top: 39%;
+    left: 19%;
+    text-indent: 10%;
+  }
+  
+  .socials {
+    position: fixed;
+    bottom: 0;
+    line-height: 111px;
+    left: 46px;
+    color: #BF4A67;
+    top: 120px;
+  }
+  
+  .socials a {
+    color: #BF4A67;
+  }
+  
+  .socials a:hover {
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .user-list {
+  
+    position: fixed;
+    right: 53px;
+    top: 16px;
+    color: #BF4A67;
+  }
+  
+  .user-list a {
+    color: #FFF;
+    text-decoration: none;
+  }
+  
+  .user-list a:hover {
+    color: #E6567A;
+    cursor: pointer;
+  }
+  
+  .arrow {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    color: #FFF;
+  }
+  
+  h2 {
+  
+    position: fixed;
+    color: #FFF;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    bottom: 170px;
+    left: 3000px;
+    width: 800px;
+    line-height: 60px;
+    font-family: serif;
+  
+  
+  }
+  
+  /* End Home Page  ------------------*/
+  
+  /* Products */
+  
+  .card-body {
+    background-color: #f7a0cb;
+  }
+  
+  .card-body span {
+    padding: 10px;
+    color: rgb(255, 235, 59);
+  }
+  
+  
+  
+  .card-footer {
+    padding: 0;
+    border-top: none;
+  }
+  
+  .card-img, .card-img-top {
+    background: #f7a0cb;
+    padding: 0 25px 25px 25px;
+  }
+  
+  h1, h1 {
+    font-size: 5vw;
+    font-family: 'Alata';
+    color: white;
+    padding-top: 152px;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    background: #f7a0cb;
+    font-family: 'Alata', serif;
+  }
+  
+  .detail-container {
+    padding-top: 120px;
+  }
+  
+  .product-details-container {
+    padding: 0 25px 25px 25px;
+    display: grid;
+    text-align: left;
+  }
+  
+  
+  .p-name {
+    font-family: 'Alata', serif;
+    font-size: 20px;
+    color: #ffebcd;
+  }
+  
+  .p-price {
+    font-size: 25px;
+    font-family: 'Alata';
+    color: #BF4A67;
+  }
+  
+  .p-description {
+    font-family: 'Space Mono', serif;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  #filters-container {
+    padding-bottom: 30px;
+  }
+  
+  #filters-container a {
+    font-family: 'Alata', serif;
+    border: 2px solid #BF4A67;
+    color: #BF4A67;
+  }
+  
+  #filters-container a:hover {
+    color: #FFF;
+  }
+  
+  
+  
+  /* End Products */
+  
+  /* Bag */
+  
+  #bag-main-container {
+    padding-top: 100px;
+  }
+  
+  .bag-item {
+    text-align: left;
+  }
+  
+  /* End Bag */
+
+  /* checkout */
+
+  .shipping-text {
+    font-size: 0.7rem;
+    padding-bottom: 0px;
+}
+
+.form-group {
+    border: 1px solid var(--color-black);
+    margin-bottom: 10px;
+}
+
+#card-element {
+    border: 1px solid var(--color-black);
+}
+
+.StripeElement,
+.stripe-style-input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 3rem;
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  border-radius: 0px;
+  background-color: rgb(255, 228, 233);
+  -webkit-box-shadow: 0 1px 3px 0 #e6ebf1;
+          box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  -webkit-transition: -webkit-box-shadow 150ms ease;
+  transition: -webkit-box-shadow 150ms ease;
+  -o-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease, -webkit-box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  -webkit-box-shadow: 0 1px 3px 0 #cfd7df;
+          box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}
+  
+.stripe-style-input::-webkit-input-placeholder {
+    color: #3b3b3b;
+}
+  
+.stripe-style-input::-moz-placeholder {
+    color: #3b3b3b;
+}
+  
+.stripe-style-input:-ms-input-placeholder {
+    color: #3b3b3b;
+}
+  
+.stripe-style-input::-ms-input-placeholder {
+    color: #3b3b3b;
+}
+  
+.stripe-style-input::placeholder {
+    color: #3b3b3b;
+}
+
+#loading-overlay {
+	display: none;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-grey);
+    z-index: 9999;
+}
+
+.loading-spinner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+select,
+select option {
+    color: var(--color-black);
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+  
+  /* Toasts */
+  .message-container {
+    position: fixed;
+    z-index: 9999;
+    top: 70px;
+    right: 20px;
+  }
+  
+  .custom-toast {
+    overflow: visible;
+  }
+  
+  .bag-notification-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 150px;
+  }
+  /* End Toasts */
+  
+  
+  
+  /* Media Queries */
+  
+  
+  @media screen and (max-width: 1024px) {
+  
+  }
+  
+  @media screen and (max-width: 990px) {
+    #mobile-nav {
+      top: 0;
+    }
+  
+    .nav-link > span {
+      font-size: 16px;
+    }
+  
+  
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+  
+  }
+  
+  @media screen and (max-width: 480px) {
+  
+  .socials {
+    display: none;
+  }
+  
+  }
+  
+  @media screen and (max-width: 320px) {
+  
+  
+  }
+  
+  
+  /* END Media Queries */
