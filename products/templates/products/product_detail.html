@@ -69,7 +69,7 @@
                         </div>
                         {% if request.user.is_superuser %}
                             <div>
-                                <a href=""><i class="las la-2x la-edit"></i></a>
+                                <a href="{% url 'edit_product' product.id %}"><i class="las la-2x la-edit"></i></a>
                                 <!-- Deletion button and modal -->
                                 <button type="button" data-bs-toggle="modal" data-bs-target="#DeletionModal" class="deletion-button">
                                     <i class="las la-2x la-trash-alt"></i>
