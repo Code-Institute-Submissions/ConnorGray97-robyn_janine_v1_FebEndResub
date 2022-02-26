@@ -51,6 +51,34 @@ body {
   font-size: 35px;
 }
 
+select, select option {
+  color: var(--color-black);
+  background: transparent;
+  color: #fff;
+  padding: 4px;
+}
+
+.btn {
+  display: inline-block;
+  font-family: Alata;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0%;
+  font-size: 1rem;
+  /* border-radius: 0.25rem; */
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
   /* Media Queries  ------------------*/
 
   /* Home Page  ------------------*/
@@ -462,6 +490,7 @@ label[for="id_login"],
 
 label {
   color: #790c27;
+  padding-bottom: 10px;
 }
 
 .title {
@@ -469,8 +498,26 @@ label {
   color: #ffffff;
   font-size: 50px;
   padding: 10px;
+  padding-top: 80px;
+}
+
+.form-group {
+  text-align: left;
+  font-family: 'Alata';
 }
   
+  /* Blog */
+
+  #blog-title {
+    padding-top: 200px;
+  }
+
+  .title-heading-small {
+    font-family: Alata;
+    color: #fff;
+    padding: 80px;
+  }
+
   /* Media Queries */
   
   
@@ -501,6 +548,8 @@ label {
 .socials {
   display: none;
 }
+
+
 
 }
 
