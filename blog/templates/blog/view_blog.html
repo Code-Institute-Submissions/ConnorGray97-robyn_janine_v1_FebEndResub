@@ -28,13 +28,13 @@
                         </a>
                     {% else %}
                         <a href="{% url 'view_post' post.id %}"></a>">
-                            <img src="{{ MEDIA_URL }}no_image.png" alt="No image found for {{ post.title }}">
+                            <img class="blog-img" src="{{ MEDIA_URL }}no_image.png" alt="No image found for {{ post.title }}">
                         </a>
                     {% endif %}
                         <div class="blog-item-details blog-page-details">
                             <h2 class="text-center">{{post.title}}</h2>
                                 <a href="{% url 'view_post' post.id %}"
-                                    class="item-link-light item-link-button  flex-center">Read More ...
+                                    class="item-link-light item-link-button  flex-center title text-decoration-none">Read More ...
                                 </a>
                         </div>
                 </div>

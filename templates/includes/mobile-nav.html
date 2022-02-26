@@ -4,7 +4,7 @@
         <i class="las la-2x la-bars text-white border-0"></i>
     </button>
     <a href="{% url 'home' %}" class="nav-link d-lg-none d-md-flex">
-        <span class="text-white">Robyn Janine</span>
+        <span id="mobile-title" class="text-white">Robyn Janine</span>
     </a>
     <div class="d-flex flex-row">
         <a href="{% url 'view_bag' %}" class="nav-link text-white d-lg-none d-xl-none">
@@ -34,7 +34,7 @@
                             </li>
                         {% endif %}
                         <li>
-                            <a href="" class="nav-link text-uppercase text-white">My Account</a>
+                            <a href="{% url 'profile' %}" class="nav-link text-uppercase text-white">My Account</a>
                         </li>
                         <li>
                             <a href="{% url 'account_logout' %}" class="nav-link text-uppercase text-white">Logout</a>

@@ -10,7 +10,7 @@
 <div id="products-main"></div>
   <div class="container my-5">
     <div class="row d-flex justify-content-center">
-      <div class="col-12 col-lg-6">
+      <div id="allauth-forms" class="col-12 col-lg-6">
         <h1 class="fs-4 fw-bold text-uppercase mb-4">{% trans "Sign In" %}</h1>
 
           {% get_providers as socialaccount_providers %}
@@ -39,14 +39,14 @@
 
           <form class="login" method="POST" action="{% url 'account_login' %}">
             {% csrf_token %}
-            {{ form.as_p }}
+            {{ form|crispy }}
             {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
             {% endif %}
             <p class='my-4'>
               <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
             </p>
-            <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+            <button class="primaryAction btn" type="submit">{% trans "Sign In" %}</button>
           </form>
       </div>
     </div>

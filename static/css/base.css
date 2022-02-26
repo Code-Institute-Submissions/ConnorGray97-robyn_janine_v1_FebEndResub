@@ -79,6 +79,14 @@ select, select option {
   /* border-radius: 0.25rem; */
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+#allauth-forms {
+  justify-content: center;
+}
+
+#mobile-title {
+  font-family: Alata;
+}
   /* Media Queries  ------------------*/
 
   /* Home Page  ------------------*/
@@ -518,6 +526,18 @@ label {
     padding: 80px;
   }
 
+  .col-lg-8 {
+    text-align: left;
+  }
+
+
+  .blog-paragraph {
+    font-family: Alata;
+    padding: 30px;
+    color: #fff;
+  }
+
+
   /* Media Queries */
   
   
@@ -549,7 +569,13 @@ label {
   display: none;
 }
 
+#home-hero {
+  height: 30vh;
+}
 
+.names > p {
+  top: 29%;
+}
 
 }
 

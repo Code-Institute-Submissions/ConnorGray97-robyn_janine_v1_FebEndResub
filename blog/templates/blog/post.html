@@ -4,15 +4,15 @@
 {
 {% block content %}
 <div class="container page-container">
+    <div class="row justify-content-center">
+        <div class="post-title-container flex-center">
+            <h1>{{post.title}}</h1>
+        </div>
+    </div>
     <div class="row item-row">
         <div class="col-12 col-md-6 post-img-col  flex-center">
             <div class="post-image-container">
                 <img src="{{ MEDIA_URL }}{{post.image}}" alt="Image belonging to {{post.title}}">
-            </div>
-        </div>
-        <div class="col-12 col-md-6 post-title-col">
-            <div class="post-title-container flex-center">
-                <h1>{{post.title}}</h1>
             </div>
         </div>
     </div>
@@ -46,7 +46,7 @@
                                 cancel-btn flex-center" data-bs-dismiss="modal">Cancel</button>
                             <form method="POST" action="{% url 'delete_post' post.id %}">
                                 {% csrf_token %}
-                                <button type="submit" class="modal-button fs-3 flex-center delete-btn">Delete</button>
+                                <button type="submit" class="modal-button fs-3 flex-center delete-btn btn">Delete</button>
                             </form>
 
                         </div>
@@ -56,7 +56,7 @@
         </div>
         {% endif %}
         <div class="col-12 post-content">
-            <p>{{post.content}}</p>
+            <p class="blog-paragraph">{{post.content}}</p>
         </div>
         <!-- comments section -->
         <div class="col-12 col-md-6 offset-md-2 col-lg-4 offset-lg-4 ">
@@ -91,7 +91,7 @@
                                 <form method="POST" action="{% url 'delete_comment' post_id=post.id %}">
                                     {% csrf_token %}
                                     <input type="hidden" name="comment_id" value="{{comment.id}}">
-                                    <button class=" modal-button fs-3 flex-center delete-btn"
+                                    <button class=" modal-button fs-3 flex-center delete-btn btn"
                                         type="submit">Delete</button>
                                 </form>
                             </div>
@@ -111,7 +111,7 @@
                     <form id="comment-form" method="POST" action="{% url 'view_post' post_id=post.id %}">
                         {% csrf_token %}
                         {{ form|crispy }}
-                        <button class="item-link-button flex-center item-link-dark" type="submit">Add comment</button>
+                        <button class="item-link-button flex-center item-link-dark btn" type="submit">Add comment</button>
                     </form>
                 </div>
                 {% endif %}
