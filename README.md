@@ -1,4 +1,10 @@
+![WebsiteSnapshot](media/Robyn_mockup.png)
+View the live project [here]( https://robynjanine.herokuapp.com/).
+### SuperUser Credentials
+- Username = robynjanine
+- Password = Comeinghome26
 
+I was very pushed for time with this project and have tried my best to get in as much as I can, I mention in the testing setion about an issue with my emails unfortunately I couldn't figure out what the issue was in time. I hope this doesn't affect your ability to assess this project.
 
 # User Experience
 ## Design
