@@ -25,6 +25,14 @@ body {
   bottom: 0;
 }
 
+.social {
+  color: #FFF;
+}
+
+.social:hover {
+  color: #790c27;
+}
+
 #navigation-section {
   height: 100px;
   width: 100%;
@@ -83,15 +91,6 @@ body {
   top: 39%;
   left: 19%;
   text-indent: 10%;
-}
-
-.socials {
-  position: fixed;
-  bottom: 0;
-  line-height: 111px;
-  left: 46px;
-  color: #BF4A67;
-  top: 120px;
 }
 
 .socials a {
@@ -456,6 +455,20 @@ label[for="id_login"],
 
 .col-lg-6 {
   text-align: left;
+  font-family: 'Alata';
+  color: #FFF;
+  font-size: 15px;
+}
+
+label {
+  color: #790c27;
+}
+
+.title {
+  font-family: Alata;
+  color: #ffffff;
+  font-size: 50px;
+  padding: 10px;
 }
   
   /* Media Queries */
