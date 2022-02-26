@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+      
+        <div class="col-12 col-lg-6">
+              <div class="contact-landing-title">
+                  <h2>Contact Us</h2>
+                  <p><i class="fas fa-envelope"></i>Any questions? We love hearing from you!</p>
+              </div>
+              <div class="contact-landing-form">
+                <p class="">Please fill out the form and I will get back to you as soon as possible <i class="fas fa-reply"></i></p>
+                <form action="{% url 'contact' %}" method="POST">
+                  {% csrf_token %}
+                  <table class="global-table">
+                    {{ contact_form }}
+                    {{ form|crispy }}
+                  </table>
+                  <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+              </div>
+        </div> 
+    
+  </div>
+{% endblock %}
