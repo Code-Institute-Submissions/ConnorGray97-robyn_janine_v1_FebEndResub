@@ -26,14 +26,103 @@ This theme was chosen to fit the overall feminine power theme that Robyn has wit
 
 + have the ability to log in to the site.
 + have a record of any purchases that I have made in the past and view them in detail.
-+ be able to update my shipping information.
-+ be able to update my shipping information from the checkout page. 
++ be able to update my shipping information from the checkout page.
++ Keep up to date with the admins latest blog posts.
++ Leave a comments on the blog posts and delete if needs be.
 
 ### As the site administrator, I want to:
 
 + be able to log in to an admin panel.
 + be able to add, update or remove products and update blog posts without the need for the admin panel.
 + Get an email notifications when a user submits through the contact page.
++ Be able to upload and edit blog posts. 
+
+#### **Wireframes** ####
+The wireframes for the website have been created with [Adobe XD](https://www.adobe.com/uk/products/xd.html) and are available [here](https://xd.adobe.com/view/54c0ec92-1eed-432b-b35f-aa160cc7ae47-0193/). Quite dramatic changes have been made throughout the site since initial wireframe ideas due to my time pressure and having to resort to an MVP.
+
+#### **Information Architecture** ####
+
+Fixtures JSON files have been created and used to easily upload the products information into the database.
+I have used SQLite for the development process and PostgreSQL for the deployed site. Static and media files are hosted in a AWS S3 bucket.
+The project consists of seven Django apps, with the blog app containing the two original models:
+
+
+- Products
+    - Product Model - stores information on each product
+    ```
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    sku = models.CharField(max_length=254, null=True, blank=True)
+    name = models.CharField(max_length=254)
+    description = models.TextField()
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
+    ```
+    - Category Model - stores the product categories
+    ```
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+    ```
+- Checkout 
+    - Order Model - stores information on the order
+    ```
+    order_number = models.CharField(max_length=32, null=False, editable=False)
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL, 
+                                     null=True, blank=True, related_name='orders')
+    full_name = models.CharField(max_length=50, null=False, blank=False)
+    email = models.EmailField(max_length=254, null=False, blank=False)
+    phone_number = models.CharField(max_length=20, null=False, blank=False)
+    country = CountryField(blank_label=('Country *'), null=False, blank=False)
+    postcode = models.CharField(max_length=20, null=True, blank=True)
+    town_or_city = models.CharField(max_length=40, null=False, blank=False)
+    street_address1 = models.CharField(max_length=80, null=False, blank=False)
+    street_address2 = models.CharField(max_length=80, null=True, blank=True)
+    county = models.CharField(max_length=80, null=True, blank=True)
+    date = models.DateTimeField(auto_now_add=True)
+    delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
+    order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+    grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+    original_bag = models.TextField(null=False, blank=False, default='')
+    stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
+    ```
+    - OrderLineItem - stores information on products in an order
+    ```
+    order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
+    product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
+    quantity = models.IntegerField(null=False, blank=False, default=0)
+    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+    ```
+- Blog 
+    - Post Model - stores information on each blog post
+    ```
+    title = models.CharField(max_length=150)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    content = models.TextField(null=False, blank=False)
+    image = models.ImageField(null=True, blank=True)
+    date = models.DateField(auto_now_add=True)
+    ```
+   - Comment model - stores information on each user comment.
+   ```
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    comment = models.TextField()
+    date = models.DateTimeField(auto_now_add=True)
+
+   ```
+
+- Profiles 
+    - UserProfile Model - stores information on each user profile
+    ```
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    default_phone_number = models.CharField(max_length=20, null=True, blank=True)
+    default_street_address1 = models.CharField(max_length=80, null=True, blank=True)
+    default_street_address2 = models.CharField(max_length=80, null=True, blank=True)
+    default_town_or_city = models.CharField(max_length=40, null=True, blank=True)
+    default_county = models.CharField(max_length=80, null=True, blank=True)
+    default_postcode = models.CharField(max_length=20, null=True, blank=True)
+    default_country = CountryField(blank_label='Country', null=True, blank=True)
+    ```
+
 
 # Technologies Used
 
@@ -60,6 +149,12 @@ This theme was chosen to fit the overall feminine power theme that Robyn has wit
 - [Stripe](https://stripe.com/nl) - used for the payments functionality.
 - [RandomKeygen](https://randomkeygen.com/) - used to generate passwords across the site.
 - [AWS S3](https://aws.amazon.com/s3/) - used for storage of static and media files on the deployed site.
+
+# Testing
+All testing for the website has been collected [here](https://github.com/ConnorGray97/robyn_janine_v1/blob/main/TESTING.md).
+
+
+It's worth mentioning that during the testing process I realised that I had accidentally been pushing my code with the exposed postgres URL. Therefor I removed that database whilst saving my data elsewhere and created a new one. The data is no longer compromised.
 
 # Deployment
 
