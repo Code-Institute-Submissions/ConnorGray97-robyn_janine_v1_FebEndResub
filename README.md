@@ -239,6 +239,3 @@ ALLOWED_HOSTS = ['your-app-url', 'localhost']
 7. Push the code to GitHub.
 8. Back on the app's dashboard on Heroku, under Deploy tab, connect GitHub for automatic deploys. 
 9. Finally, as the last step, Open app to see the deployed site.
-
-
-Unfortunately thing got a bit on top of me so this project is unfinished. I did what I could with the time I had and look forward to hearing feedback either way.
